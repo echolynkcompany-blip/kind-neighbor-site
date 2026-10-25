@@ -31,3 +31,10 @@ A static, mobile-friendly landing page for a prelaunch Zephyrhills, Florida home
 - In Google Search Console, verify your site and request indexing.
 - Keep name, service area, and contact information consistent between the website and Google Business Profile.
 - GitHub Pages is public static hosting. Do not store client records, private inquiries, passwords, or secrets in the repository. Add a secure third-party contact/booking tool later if needed.
+
+
+## Online inquiry form
+
+The public site now includes a nonmedical consultation inquiry form in `index.html`. It does not collect health histories or handle client onboarding.
+
+To activate submissions, create a Formspree form and replace `REPLACE_WITH_YOUR_FORMSPREE_ENDPOINT` in `script.js` with your real `https://formspree.io/f/...` URL. Configure Formspree email notifications and test with a dummy inquiry. Until configured, the form deliberately displays an error instead of claiming the inquiry was delivered. Do not collect sensitive medical or financial information.
