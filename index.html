@@ -9,6 +9,7 @@
 <section id="contact" class="section contact"><div class="wrap narrow"><p class="eyebrow">Free, no-obligation inquiry</p><h2>Tell us how we can help.</h2><p>Serving Zephyrhills, Florida. This is a general inquiry, not a booking or client intake form. Please do not include medical or financial information.</p>
 <p><strong>Visit availability:</strong> Monday–Friday, 7 a.m.–3 p.m. · Saturday, 8 a.m.–1 p.m. · Sunday closed (Eastern Time). Visits must finish within these hours. Requested times require confirmation.</p>
 <form id="inquiry-form" class="inquiry-form" method="POST">
+<div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label>Leave this field blank<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
 <div class="form-grid"><label>Full name *<input name="name" autocomplete="name" required maxlength="100"></label><label>Phone number *<input name="phone" type="tel" autocomplete="tel" required maxlength="30"></label></div>
 <div class="form-grid"><label>Email (optional)<input name="email" type="email" autocomplete="email" maxlength="150"></label><label>Zephyrhills ZIP code *<input name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="33541" required maxlength="5"></label></div>
 <label>Who needs assistance? *<select name="request_for" required><option value="">Select an option</option><option>Myself</option><option>A family member</option><option>Someone else</option></select></label>
@@ -26,7 +27,7 @@
 <label>Preferred visit days and times (optional)<input name="visit_preferences" maxlength="200" placeholder="For example: Tuesdays, 9–11 a.m."></label>
 <label>Additional details (optional)<textarea name="message" rows="3" maxlength="500" placeholder="General household or scheduling preferences only; please do not include health information."></textarea></label>
 <label class="choice consent"><input type="checkbox" name="contact_consent" value="Yes" required> I agree to be contacted about my inquiry. This does not schedule services. *</label>
-<p class="form-hint">Information is used to respond to your inquiry and is sent to a third-party form provider once configured. Do not submit sensitive health or financial information.</p>
+<p class="form-hint">Your information is sent securely to The Kind Neighbor Co. operations system so we can respond to your inquiry. Do not submit sensitive health or financial information.</p>
 <div id="form-status" class="form-status" role="status" aria-live="polite"></div><button class="button" id="submit-inquiry" type="submit">Send consultation request</button>
-</form><p class="fine">Prelaunch website: service availability is not yet confirmed. The form will remain disabled until a submission endpoint is configured.</p></div></section></main>
+</form><p class="fine">Submitting an inquiry does not book a visit. We will contact you to confirm services, location, pricing, and availability.</p></div></section></main>
 <footer><div class="wrap"><strong>The Kind Neighbor Co.</strong><p>Homemaker & Companion Services · Zephyrhills, Florida</p><p>Here to Help, Happy to Stay.</p><p class="fine">Nonmedical services only. Add the required Florida AHCA registration number to this site and advertising once issued, before marketing services.</p><p>© <span id="year"></span> The Kind Neighbor Co.</p></div></footer><script src="script.js" defer></script></body></html>
