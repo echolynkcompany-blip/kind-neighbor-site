@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFileSync} from 'node:fs';
 function setup({ok=true,hold=false}={}){
- let submit,reset=0,requests=0,release;const values={name:'TEST Browser',email:'browser@example.com',contact_consent:'Yes',company_website:'',frequency:'Weekly',hours:'2',date1:'2026-12-01',time1:'09:00'};
+ let submit,reset=0,requests=0,release;const values={name:'TEST Browser',email:'browser@example.com',contact_consent:'Yes',company_website:'',frequency:'Weekly',hours:'2'};
  const form={querySelectorAll:()=>[],reportValidity:()=>true,addEventListener:(type,fn)=>submit=fn,reset:()=>reset++,setAttribute:()=>{},removeAttribute:()=>{}};
  const button={disabled:false},status={className:'',textContent:'',classList:{add:()=>{}}};
  const fetch=async url=>{if(url.endsWith('inquiry-challenge'))return {ok:true,json:async()=>({token:'test-challenge'})};requests++;if(hold)await new Promise(r=>release=r);return {ok,json:async()=>ok?{ok:true}:{error:'Please agree to receive launch updates.'}}};
