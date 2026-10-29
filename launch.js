@@ -1,7 +1,6 @@
 (()=>{
  const API='https://kind-neighbor-admin-production.up.railway.app';
  const form=document.getElementById('launch-form'),button=document.getElementById('join-launch'),status=document.getElementById('launch-status');
- if(!form)return;
  const clean=v=>typeof v==='string'&&/^[a-z0-9][a-z0-9_-]{0,79}$/.test(v)?v:'';
  let attribution={};
  try{
@@ -9,6 +8,7 @@
   if(source&&medium&&campaign){attribution={source,medium,campaign};try{sessionStorage.setItem('kn_marketing_v1',JSON.stringify(attribution))}catch{}}
   else {try{const saved=JSON.parse(sessionStorage.getItem('kn_marketing_v1')||'{}');if(clean(saved.source)&&clean(saved.medium)&&clean(saved.campaign))attribution={source:saved.source,medium:saved.medium,campaign:saved.campaign}}catch{}}
  }catch{}
+ if(!form)return;
  let challengePromise,challengeTime=0,pending=false;
  function prepare(){challengeTime=Date.now();challengePromise=fetch(API+'/api/public/inquiry-challenge',{credentials:'omit',signal:AbortSignal.timeout(15000)}).then(async r=>{if(!r.ok)throw Error('Launch sign-up is temporarily unavailable. Please try again shortly.');const d=await r.json();await new Promise(resolve=>setTimeout(resolve,1600));return d.token});challengePromise.catch(()=>{});return challengePromise}
  prepare();
