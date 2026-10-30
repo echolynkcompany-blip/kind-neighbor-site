@@ -28,3 +28,5 @@ body{background:#fffdf8}h1,h2,h3{font-weight:500;letter-spacing:-.035em}.header{
 .scope-note{padding:20px;border-left:4px solid var(--gold);background:var(--cream);font-size:.94rem;margin:30px 0}textarea{resize:vertical}footer a{display:inline-block;padding:4px 0}.service-copy{overflow-wrap:anywhere}
 
 .logo-frame{position:relative;width:100%;max-width:460px;margin:auto}.logo-frame .hero-logo{display:block}.logo-caption{position:absolute;left:10px;right:10px;bottom:10px;height:26%;display:flex;align-items:center;justify-content:center;padding:12px;background:#fffdf8;border-radius:0 0 3px 3px;color:var(--green);text-align:center;font-size:clamp(.7rem,1vw,.88rem);font-weight:650;letter-spacing:.12em}@media(max-width:800px){.logo-frame{max-width:350px}.logo-frame .hero-logo{max-width:none}}@media(max-width:520px){.logo-frame{max-width:280px}}
+
+.service-copy .cards h2{font-size:1.5rem;margin:.5em 0;line-height:1.15}
