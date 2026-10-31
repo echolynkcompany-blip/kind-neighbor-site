@@ -1,7 +1,12 @@
-# The Kind Neighbor Co. — prelaunch website
+# The Kind Neighbor Co. — public household-service website
 
 ## Current public version
-The public index is a neutral preparation notice. There are no service offers, prices, inquiry form, bookings or payments. AHCA registration has not been obtained. The full landing-page redesign is retained on `launch-redesign`; do not merge until registration is issued and the actual registration number is inserted in its footer. This holding page uses noindex until launch. The existing script remains available for the later launch form but is not loaded on the holding page.
+The main branch is the public household-service website, with a quote-request form, service boundaries, privacy policy and terms. Its service menu is cleaning, laundry, organization, decluttering, garage-sale preparation, packing and everyday technology assistance. Existing service boundaries remain unchanged. The admin and companion portals are separate.
+
+## Search appearance (October 31, 2026)
+All pages consistently publish the full business name through Open Graph site-name metadata. The homepage and About heading identify the business and Zephyrhills, Florida directly. Indexed pages contain connected LocalBusiness, WebSite and WebPage structured data with the existing public phone/email, logo and city/state/country. No street address, licensing claim, new social-profile identity or review rating is invented. The WebSite alternate name includes the visibly displayed business name/location and domain. Titles, descriptions and social previews match current household services. The sitemap records this release date. Old homemaker/companionship pages remain noindex and direct visitors to current services.
+
+These changes influence search identity; they do not directly edit Google Search or its AI Overview. Request a recrawl through the verified Search Console property after publication; updating sitemap.xml is not the same as submitting a reindex request. Do not use the retired sitemap ping endpoint or the restricted Indexing API for these ordinary pages.
 
 ## Domain: thekindneighbor.site (Hostinger)
 The existing host is GitHub Pages, repository echolynkcompany-blip/kind-neighbor-site. Purchasing the domain does not require moving hosting to Hostinger.
@@ -23,7 +28,7 @@ The existing host is GitHub Pages, repository echolynkcompany-blip/kind-neighbor
 
 Official setup: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 
-## Launch gates
+## Historical launch checklist (regulated-service expansion)
 - Obtain AHCA registration; insert actual number in launch footer. Confirm permitted services, service area, advertising and operating requirements before public service promotion.
 - Reconcile launch-redesign with current main before merging; preserve domain configuration and replace the holding notice intentionally.
 - Confirm actual business contact details, prices, expenses, availability, service boundaries and privacy information. Do not claim certifications, screening, insurance or registration not yet established.
